@@ -3,6 +3,8 @@
 
 while true
 do
-  echo "hi"
-  sleep 1
+  ping -c 1 -w 2 google.com
+  RETVAL=$?
+  [ $RETVAL -ne 0 ]  && cvlc ./beep-01a.mp3 &
+  sleep 15
 done
