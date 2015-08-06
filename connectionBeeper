@@ -1,0 +1,8 @@
+#!/bin/bash
+# Beep while the internet is down
+
+while true
+do
+  echo "hi"
+  sleep 1
+done
