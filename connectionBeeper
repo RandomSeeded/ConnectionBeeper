@@ -6,6 +6,6 @@ while true
 do
   ping -c 1 -w 3 google.com
   RETVAL=$?
-  [ $RETVAL -ne 0 ] && notify-send "Internet Down!"  && [ $LOUD == "l" ] && cvlc ./beep-01a.mp3 &
+  [ $RETVAL -ne 0 ] && notify-send -u critical "Internet Down!"  && [ $LOUD == "l" ] && cvlc ./beep-01a.mp3 &
   sleep 5
 done
